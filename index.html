@@ -1,0 +1,56 @@
+<html>
+<head>
+
+</head>
+
+<body>
+
+	<div class="viewer">
+		<div class="wrapper">
+			<div class="img">1</div>
+			<div class="img">2</div>
+			<div class="img">3</div>
+			<div class="img">4</div>
+			<div class="img">5</div>
+		</div>
+	</div>
+
+	<div class="viewer"></div>
+
+	<button id="prev"></button>
+	<button id="next"></button>
+	
+	<script src="./podoJ.js"></script>
+	<script>
+		// select element!
+		j("id","prev");
+		j("class","viewer");
+
+		// return tagName selected.
+		j("id","prev").tagName; // "BUTTON"
+		j("class","viewer").tagName(); // "DIV"
+
+		// add class
+		j("class","viewer").addClass(0, "test"); // index(element position), class name
+		j("id","prev").addClass(0,"test");
+
+		// extract html
+		j("class","viewer").html(); // need to insert index, default index is 0.
+		j("class","viewer").html(0);
+		j("class","viewer").html(1);
+		j("class","viewer").html("all");
+
+		// "
+		// <div class="wrapper">
+		// 	<div class="img">1</div>
+		// 	<div class="img">2</div>
+		// 	<div class="img">3</div>
+		// 	<div class="img">4</div>
+		// 	<div class="img">5</div>
+		// </div>
+		// "
+
+
+	</script>
+</body>
+</html>
